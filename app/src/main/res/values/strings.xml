@@ -1,0 +1,30 @@
+<resources>
+    <string name="app_name">Rapidex</string>
+    <string name="usuario">Usuário</string>
+    <string name="senha">Senha</string>
+    <string name="login">Login</string>
+    <string name="nao_tem_cadastro">Não tem cadastro ?</string>
+    <string name="cadastrase">Cadastrar-se</string>
+    <string name="confirmar_senha">Confirmar Senha</string>
+    <string name="ja_cadastrado">Já Cadastrado?</string>
+    <string name="bem_vindo_rapidex">Bem Vindo á Rapidex</string>
+
+    <string name="openNavDrawer" />
+    <string name="closeNavDrawer" />
+
+
+    <string name="log_out">Log Out</string>
+    <string name="username">Usuário</string>
+    <string name="todo">TODO</string>
+    <string name="sair">Sair</string>
+
+    <string name="meus_pedidos">Meus Pedidos</string>
+    <string name="rastreamento">Rastreamento</string>
+
+    <string name="contato_rapidex">Contato Rapidex</string>
+
+    <string name="sobre">Sobre</string>
+    <string name="fazer_pedido">Fazer Pedido</string>
+
+
+</resources>

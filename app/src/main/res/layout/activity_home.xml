@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.drawerlayout.widget.DrawerLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/img_background"
+    android:orientation="vertical"
+    android:id="@+id/drawer_layout"
+    tools:context=".HomeActivity">
+
+   <LinearLayout
+       android:layout_width="match_parent"
+       android:layout_height="match_parent"
+       android:orientation="vertical">
+
+       <include
+           layout="@layout/home_toolbar"/>
+
+
+       <!-- Aqui abaixo vai o conteudo dessa pagina -->
+
+
+       <androidx.constraintlayout.widget.ConstraintLayout
+           android:layout_width="match_parent"
+           android:background="@drawable/img_background"
+           android:layout_gravity="center_vertical"
+           android:layout_height="match_parent">
+
+           <Button
+               android:id="@+id/btn_Fretes"
+               android:layout_width="122dp"
+               android:layout_height="101dp"
+               android:text="Fazer Pedido"
+               android:textStyle="bold"
+               tools:layout_editor_absoluteX="77dp"
+               tools:layout_editor_absoluteY="165dp"
+               tools:ignore="MissingConstraints" />
+
+           <Button
+               android:id="@+id/btn_Servicos"
+               android:layout_width="122dp"
+               android:layout_height="101dp"
+               android:text="Serviços"
+               android:textStyle="bold"
+               app:layout_constraintBottom_toBottomOf="parent"
+               app:layout_constraintTop_toBottomOf="@+id/btn_Fretes"
+               app:layout_constraintVertical_bias="0.0"
+               tools:ignore="MissingConstraints"
+               tools:layout_editor_absoluteX="77dp" />
+
+           <Button
+               android:id="@+id/btn_Rastreamento"
+               android:layout_width="122dp"
+               android:layout_height="101dp"
+               android:textSize="11dp"
+               android:text="Rastreamento"
+               android:textStyle="bold"
+               tools:layout_editor_absoluteX="215dp"
+               tools:layout_editor_absoluteY="165dp"
+               tools:ignore="MissingConstraints" />
+
+           <Button
+               android:id="@+id/btn_Sobre"
+               android:layout_width="122dp"
+               android:layout_height="101dp"
+               android:layout_marginBottom="308dp"
+               android:text="Sobre Nós"
+               android:textStyle="bold"
+               app:layout_constraintBottom_toBottomOf="parent"
+               app:layout_constraintTop_toBottomOf="@+id/button2"
+               app:layout_constraintVertical_bias="0.134"
+               tools:ignore="MissingConstraints,UnknownId"
+               tools:layout_editor_absoluteX="215dp" />
+
+           <!-- Aqui termina o conteudo dessa pagina -->
+
+       </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+
+
+   </LinearLayout>
+
+
+    <RelativeLayout
+        android:layout_width="300dp"
+        android:layout_height="match_parent"
+        android:layout_gravity="start"
+        android:background="@android:color/white">
+
+        <include
+            layout="@layout/main_nav_drawer"/>
+
+    </RelativeLayout>
+
+</androidx.drawerlayout.widget.DrawerLayout>
