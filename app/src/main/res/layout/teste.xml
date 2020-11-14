@@ -6,10 +6,5 @@
     android:layout_width="match_parent"
     android:background="@drawable/img_background"
     android:layout_gravity="center_vertical"
-    android:layout_height="match_parent">
-
-    <!-- AQUI UMA PAGINA TESTE PARA SEMPRE CRIAR O CONTEUDO DAS PAGINAS,
-    COPIAR E COLAR DENTRO DO LINEAR LAAYOUT DEPOIS DE INCLUDE DE CADA CODIGO XML DE PADA PAGINA, POIS
-    DENTRO DO DRAWER LAAYOUT NÃO É POSSIVEL COLOCAR CONTEUDO COM FACILIDADE -->
-
-</androidx.constraintlayout.widget.ConstraintLayout>
+    android:layout_height="match_parent"
+    tools:ignore="ExtraText"/>

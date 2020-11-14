@@ -15,7 +15,7 @@
 
     <string name="log_out">Log Out</string>
     <string name="username">Usuário</string>
-    <string name="todo">TODO</string>
+    <string name="tudo">TODO</string>
     <string name="sair">Sair</string>
 
     <string name="meus_pedidos">Meus Pedidos</string>
@@ -25,6 +25,35 @@
 
     <string name="sobre">Sobre</string>
     <string name="fazer_pedido">Fazer Pedido</string>
+    <string name="sac_rapidex_com_br">sac@rapidex.com.br</string>
+    <string name="r_amador_bueno_389_491_santo_amaro">R. Amador Bueno, 389/491 - Santo Amaro</string>
+    <string name="s_o_paulo_sp_cep_04752_900">São Paulo - SP, CEP:04752-900</string>
+    <string name="digite_sua_mensagem">Digite Sua Mensagem</string>
+    <string name="contato">Contato</string>
+    <string name="fone">Telefone</string>
+    <string name="_11_2345_7894">11 2345-7894</string>
+    <string name="endere_o">Endereço</string>
+    <string name="mail">E-mail</string>
+    <string name="nome">Nome</string>
+    <string name="e_mail">E-mail</string>
+    <string name="entrar_em_contato">Entrar em Contato</string>
+    <string name="telefone">Telefone</string>
+    <string name="enviar">Enviar</string>
+    <string name="nossos_servi_os">NOSSOS SERVIÇOS</string>
+    <string name="entrega_expressa_com_moto_de_cargas_de">Entrega expressa com moto de cargas de</string>
+    <string name="cargas_de_pequeno_e_grande_porte_para">Cargas de pequeno e grande porte, para</string>
+    <string name="frete_estadual">FRETE ESTADUAL</string>
+    <string name="todo_o_estado_de_s_o_paulo">todo o Estado de São Paulo.</string>
+    <string name="frete_nacional">FRETE NACIONAL</string>
+    <string name="cargas_de_pequenos_e_medios_porte_para">Cargas de pequenos e medios porte, para</string>
+    <string name="pequeno_porte_na_grande_s_o_paulo">pequeno porte, na Grande São Paulo.</string>
+    <string name="todo_o_brasil">todo o Brasil.</string>
+    <string name="frete_r_pido">FRETE RÁPIDO</string>
+    <string name="outro">TODO</string>
+    <string name="cargas_expressas_com_agilidade_na_entrega_em_todo_o_estado_de_s_o_paulo_para_todo">Cargas Expressas com agilidade na entrega, em todo o estado de São Paulo para todo</string>
+    <string name="o_brasil">o Brasil.</string>
+    <string name="todos">TODO</string>
+    <string name="todo" translatable="false">TODO</string>
 
 
 </resources>

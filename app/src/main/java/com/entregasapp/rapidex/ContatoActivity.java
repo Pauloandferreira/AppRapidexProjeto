@@ -25,9 +25,19 @@ public class ContatoActivity extends AppCompatActivity {
         drawerLayout = findViewById(R.id.drawer_layout);
 
     }
+    //mensagem do botão
+    public void abrirDialog(View view){
+        androidx.appcompat.app.AlertDialog.Builder dialog = new androidx.appcompat.app.AlertDialog.Builder
+                (this);
+        dialog.setTitle("Mensagem");
+        dialog.setMessage("Sua Mensagem Foi Enviada com Sucesso!");
 
+        dialog.create();
+        dialog.show();
+    }
+    //Fim do codigo da mesagem do botão
     public void ClickMenu (View view){
-        openDrawer(drawerLayout);
+       openDrawer(drawerLayout);
 
     }
 
