@@ -1,0 +1,709 @@
+Index: app/src/main/res/layout/activity_servicos.xml
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.BaseRevisionTextPatchEP
+<+><?xml version=\"1.0\" encoding=\"utf-8\"?>\r\n<androidx.drawerlayout.widget.DrawerLayout\r\n    xmlns:android=\"http://schemas.android.com/apk/res/android\"\r\n    xmlns:app=\"http://schemas.android.com/apk/res-auto\"\r\n    xmlns:tools=\"http://schemas.android.com/tools\"\r\n    android:layout_width=\"match_parent\"\r\n    android:layout_height=\"match_parent\"\r\n    android:background=\"@drawable/img_background\"\r\n    android:orientation=\"vertical\"\r\n    android:id=\"@+id/drawer_layout\"\r\n    tools:context=\".ServicosActivity\">\r\n\r\n\r\n    <LinearLayout\r\n        android:layout_width=\"match_parent\"\r\n        android:layout_height=\"match_parent\"\r\n        android:orientation=\"vertical\">\r\n\r\n        <include\r\n            layout=\"@layout/home_toolbar\"/>\r\n        <TextView\r\n            android:layout_width=\"match_parent\"\r\n            android:layout_height=\"match_parent\"\r\n            android:text=\"Serviços\"\r\n            android:textSize=\"50sp\"\r\n            android:textStyle=\"bold\"\r\n            android:gravity=\"center\"/>\r\n\r\n\r\n    </LinearLayout>\r\n\r\n    <RelativeLayout\r\n        android:layout_width=\"300dp\"\r\n        android:layout_height=\"match_parent\"\r\n        android:layout_gravity=\"start\"\r\n        android:background=\"@android:color/white\">\r\n\r\n        <include\r\n            layout=\"@layout/main_nav_drawer\"/>\r\n\r\n    </RelativeLayout>\r\n\r\n</androidx.drawerlayout.widget.DrawerLayout>
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+--- app/src/main/res/layout/activity_servicos.xml	(revision 0aab59911d9a36fc0f81d3683340effc247e5528)
++++ app/src/main/res/layout/activity_servicos.xml	(date 1605060018642)
+@@ -18,13 +18,205 @@
+ 
+         <include
+             layout="@layout/home_toolbar"/>
+-        <TextView
++
++        <androidx.constraintlayout.widget.ConstraintLayout
+             android:layout_width="match_parent"
+             android:layout_height="match_parent"
+-            android:text="Serviços"
+-            android:textSize="50sp"
+-            android:textStyle="bold"
+-            android:gravity="center"/>
++            android:layout_gravity="center_vertical"
++            android:background="@drawable/img_background"
++            tools:ignore="ExtraText">
++
++            <TextView
++                android:id="@+id/textView5"
++                android:layout_width="161dp"
++                android:layout_height="28dp"
++                android:layout_marginTop="4dp"
++                android:text="@string/nossos_servi_os"
++                android:textColor="#FF5722"
++                android:textSize="18sp"
++                android:textStyle="bold"
++                app:layout_constraintEnd_toEndOf="parent"
++                app:layout_constraintStart_toStartOf="parent"
++                app:layout_constraintTop_toTopOf="parent" />
++
++            <TextView
++                android:id="@+id/textView"
++                android:layout_width="wrap_content"
++                android:layout_height="wrap_content"
++                android:text="@string/cargas_expressas_com_agilidade_na_entrega_em_todo_o_estado_de_s_o_paulo_para_todo"
++                android:textColor="#ffffff"
++                android:textSize="8sp"
++                android:textStyle="bold"
++                app:layout_constraintEnd_toEndOf="parent"
++                app:layout_constraintHorizontal_bias="0.484"
++                app:layout_constraintStart_toStartOf="parent"
++                app:layout_constraintTop_toBottomOf="@+id/textView5" />
++
++            <TextView
++                android:id="@+id/textView4"
++                android:layout_width="wrap_content"
++                android:layout_height="wrap_content"
++                android:text="@string/o_brasil"
++                android:textColor="#ffffff"
++                android:textSize="9sp"
++                android:textStyle="bold"
++                app:layout_constraintEnd_toEndOf="parent"
++                app:layout_constraintStart_toStartOf="parent"
++                app:layout_constraintTop_toBottomOf="@+id/textView" />
++
++            <ImageView
++                android:id="@+id/image_moto"
++                android:layout_width="141dp"
++                android:layout_height="89dp"
++                android:layout_marginTop="12dp"
++                android:contentDescription="@string/todo"
++                app:layout_constraintEnd_toEndOf="parent"
++                app:layout_constraintStart_toStartOf="parent"
++                app:layout_constraintTop_toBottomOf="@+id/textView4"
++                app:srcCompat="@drawable/im1" />
++
++            <TextView
++                android:id="@+id/textView6"
++                android:layout_width="wrap_content"
++                android:layout_height="wrap_content"
++                android:layout_marginTop="16dp"
++                android:text="@string/frete_r_pido"
++                android:textColor="#F8F5F5"
++                android:textSize="12sp"
++                android:textStyle="bold"
++                app:layout_constraintEnd_toEndOf="parent"
++                app:layout_constraintStart_toStartOf="parent"
++                app:layout_constraintTop_toBottomOf="@+id/image_moto" />
++
++            <TextView
++                android:id="@+id/textView7"
++                android:layout_width="wrap_content"
++                android:layout_height="wrap_content"
++                android:text="@string/entrega_expressa_com_moto_de_cargas_de"
++                android:textColor="#ffffff"
++                android:textSize="10sp"
++                android:textStyle="bold"
++                app:layout_constraintEnd_toEndOf="parent"
++                app:layout_constraintStart_toStartOf="parent"
++                app:layout_constraintTop_toBottomOf="@+id/textView6" />
++
++            <TextView
++                android:id="@+id/textView8"
++                android:layout_width="wrap_content"
++                android:layout_height="wrap_content"
++                android:text="@string/pequeno_porte_na_grande_s_o_paulo"
++                android:textColor="#ffffff"
++                android:textSize="10sp"
++                android:textStyle="bold"
++                app:layout_constraintEnd_toEndOf="parent"
++                app:layout_constraintStart_toStartOf="parent"
++                app:layout_constraintTop_toBottomOf="@+id/textView7" />
++
++            <ImageView
++                android:id="@+id/imageView2"
++                android:layout_width="141dp"
++                android:layout_height="89dp"
++                android:layout_marginTop="16dp"
++                app:layout_constraintEnd_toEndOf="parent"
++                app:layout_constraintHorizontal_bias="0.498"
++                app:layout_constraintStart_toStartOf="parent"
++                app:layout_constraintTop_toBottomOf="@+id/textView8"
++                app:srcCompat="@drawable/im2"
++                android:contentDescription="@string/todo" />
++
++            <TextView
++                android:id="@+id/textView9"
++                android:layout_width="wrap_content"
++                android:layout_height="wrap_content"
++                android:layout_marginTop="16dp"
++                android:text="@string/frete_estadual"
++                android:textColor="#ffffff"
++                android:textSize="12sp"
++                android:textStyle="bold"
++                app:layout_constraintEnd_toEndOf="parent"
++                app:layout_constraintHorizontal_bias="0.498"
++                app:layout_constraintStart_toStartOf="parent"
++                app:layout_constraintTop_toBottomOf="@+id/imageView2" />
++
++            <TextView
++                android:id="@+id/textView10"
++                android:layout_width="wrap_content"
++                android:layout_height="wrap_content"
++                android:text="@string/cargas_de_pequeno_e_grande_porte_para"
++                android:textColor="#ffffff"
++                android:textSize="10sp"
++                android:textStyle="bold"
++                app:layout_constraintEnd_toEndOf="parent"
++                app:layout_constraintStart_toStartOf="parent"
++                app:layout_constraintTop_toBottomOf="@+id/textView9" />
++
++            <TextView
++                android:id="@+id/textView18"
++                android:layout_width="wrap_content"
++                android:layout_height="wrap_content"
++                android:text="@string/todo_o_estado_de_s_o_paulo"
++                android:textColor="#ffffff"
++                android:textSize="10sp"
++                android:textStyle="bold"
++                app:layout_constraintEnd_toEndOf="parent"
++                app:layout_constraintStart_toStartOf="parent"
++                app:layout_constraintTop_toBottomOf="@+id/textView10" />
++
++            <ImageView
++                android:id="@+id/imageView3"
++                android:layout_width="141dp"
++                android:layout_height="89dp"
++                android:layout_marginTop="16dp"
++                app:layout_constraintEnd_toEndOf="parent"
++                app:layout_constraintStart_toStartOf="parent"
++                app:layout_constraintTop_toBottomOf="@+id/textView18"
++                app:srcCompat="@drawable/im3"
++                android:contentDescription="@string/todo" />
++
++            <TextView
++                android:id="@+id/textView19"
++                android:layout_width="wrap_content"
++                android:layout_height="wrap_content"
++                android:layout_marginTop="16dp"
++                android:text="@string/frete_nacional"
++                android:textColor="#ffffff"
++                android:textSize="12sp"
++                android:textStyle="bold"
++                app:layout_constraintEnd_toEndOf="parent"
++                app:layout_constraintHorizontal_bias="0.498"
++                app:layout_constraintStart_toStartOf="parent"
++                app:layout_constraintTop_toBottomOf="@+id/imageView3" />
++
++            <TextView
++                android:id="@+id/textView20"
++                android:layout_width="wrap_content"
++                android:layout_height="wrap_content"
++                android:text="@string/cargas_de_pequenos_e_medios_porte_para"
++                android:textColor="#ffffff"
++                android:textSize="10sp"
++                android:textStyle="bold"
++                app:layout_constraintEnd_toEndOf="parent"
++                app:layout_constraintStart_toStartOf="parent"
++                app:layout_constraintTop_toBottomOf="@+id/textView19" />
++
++            <TextView
++                android:id="@+id/textView21"
++                android:layout_width="wrap_content"
++                android:layout_height="wrap_content"
++                android:layout_marginTop="16dp"
++                android:text="@string/todo_o_brasil"
++                android:textColor="#ffffff"
++                android:textSize="10sp"
++                android:textStyle="bold"
++                app:layout_constraintEnd_toEndOf="parent"
++                app:layout_constraintStart_toStartOf="parent"
++                app:layout_constraintTop_toBottomOf="@+id/textView19" />
++
++        </androidx.constraintlayout.widget.ConstraintLayout>
++
++        <!-- AQUI UMA PAGINA TESTE PARA SEMPRE CRIAR O CONTEUDO DAS PAGINAS,
++        COPIAR E COLAR DENTRO DO LINEAR LAAYOUT DEPOIS DE INCLUDE DE CADA CODIGO XML DE PADA PAGINA, POIS
++        DENTRO DO DRAWER LAAYOUT NÃO É POSSIVEL COLOCAR CONTEUDO COM FACILIDADE -->
+ 
+ 
+     </LinearLayout>
+Index: app/src/main/res/layout/teste.xml
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.BaseRevisionTextPatchEP
+<+><?xml version=\"1.0\" encoding=\"utf-8\"?>\r\n<androidx.constraintlayout.widget.ConstraintLayout\r\n    xmlns:android=\"http://schemas.android.com/apk/res/android\"\r\n    xmlns:app=\"http://schemas.android.com/apk/res-auto\"\r\n    xmlns:tools=\"http://schemas.android.com/tools\"\r\n    android:layout_width=\"match_parent\"\r\n    android:background=\"@drawable/img_background\"\r\n    android:layout_gravity=\"center_vertical\"\r\n    android:layout_height=\"match_parent\">\r\n\r\n    <!-- AQUI UMA PAGINA TESTE PARA SEMPRE CRIAR O CONTEUDO DAS PAGINAS,\r\n    COPIAR E COLAR DENTRO DO LINEAR LAAYOUT DEPOIS DE INCLUDE DE CADA CODIGO XML DE PADA PAGINA, POIS\r\n    DENTRO DO DRAWER LAAYOUT NÃO É POSSIVEL COLOCAR CONTEUDO COM FACILIDADE -->\r\n\r\n</androidx.constraintlayout.widget.ConstraintLayout>
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+--- app/src/main/res/layout/teste.xml	(revision 0aab59911d9a36fc0f81d3683340effc247e5528)
++++ app/src/main/res/layout/teste.xml	(date 1604975416819)
+@@ -6,10 +6,5 @@
+     android:layout_width="match_parent"
+     android:background="@drawable/img_background"
+     android:layout_gravity="center_vertical"
+-    android:layout_height="match_parent">
+-
+-    <!-- AQUI UMA PAGINA TESTE PARA SEMPRE CRIAR O CONTEUDO DAS PAGINAS,
+-    COPIAR E COLAR DENTRO DO LINEAR LAAYOUT DEPOIS DE INCLUDE DE CADA CODIGO XML DE PADA PAGINA, POIS
+-    DENTRO DO DRAWER LAAYOUT NÃO É POSSIVEL COLOCAR CONTEUDO COM FACILIDADE -->
+-
+-</androidx.constraintlayout.widget.ConstraintLayout>
+\ No newline at end of file
++    android:layout_height="match_parent"
++    tools:ignore="ExtraText"/>
+\ No newline at end of file
+Index: app/src/main/res/layout/activity_contato.xml
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.BaseRevisionTextPatchEP
+<+><?xml version=\"1.0\" encoding=\"utf-8\"?>\r\n<androidx.drawerlayout.widget.DrawerLayout\r\n    xmlns:android=\"http://schemas.android.com/apk/res/android\"\r\n    xmlns:app=\"http://schemas.android.com/apk/res-auto\"\r\n    xmlns:tools=\"http://schemas.android.com/tools\"\r\n    android:layout_width=\"match_parent\"\r\n    android:layout_height=\"match_parent\"\r\n    android:background=\"@drawable/img_background\"\r\n    android:orientation=\"vertical\"\r\n    android:id=\"@+id/drawer_layout\"\r\n    tools:context=\".ContatoActivity\">\r\n\r\n    <LinearLayout\r\n        android:layout_width=\"match_parent\"\r\n        android:layout_height=\"match_parent\"\r\n        android:orientation=\"vertical\">\r\n\r\n        <include\r\n            layout=\"@layout/home_toolbar\"/>\r\n\r\n        <TextView\r\n            android:layout_width=\"match_parent\"\r\n            android:layout_height=\"match_parent\"\r\n            android:text=\"Contato\"\r\n            android:textSize=\"50sp\"\r\n            android:textStyle=\"bold\"\r\n            android:gravity=\"center\"/>\r\n\r\n\r\n    </LinearLayout>\r\n\r\n    <RelativeLayout\r\n        android:layout_width=\"300dp\"\r\n        android:layout_height=\"match_parent\"\r\n        android:layout_gravity=\"start\"\r\n        android:background=\"@android:color/white\">\r\n\r\n        <include\r\n            layout=\"@layout/main_nav_drawer\"/>\r\n\r\n    </RelativeLayout>\r\n\r\n</androidx.drawerlayout.widget.DrawerLayout>
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+--- app/src/main/res/layout/activity_contato.xml	(revision 0aab59911d9a36fc0f81d3683340effc247e5528)
++++ app/src/main/res/layout/activity_contato.xml	(date 1605059055744)
+@@ -1,43 +1,214 @@
+ <?xml version="1.0" encoding="utf-8"?>
+-<androidx.drawerlayout.widget.DrawerLayout
++<androidx.constraintlayout.widget.ConstraintLayout
+     xmlns:android="http://schemas.android.com/apk/res/android"
+     xmlns:app="http://schemas.android.com/apk/res-auto"
+     xmlns:tools="http://schemas.android.com/tools"
+     android:layout_width="match_parent"
+     android:layout_height="match_parent"
++    android:layout_gravity="center_vertical"
+     android:background="@drawable/img_background"
+-    android:orientation="vertical"
+-    android:id="@+id/drawer_layout"
+     tools:context=".ContatoActivity">
+ 
+-    <LinearLayout
+-        android:layout_width="match_parent"
+-        android:layout_height="match_parent"
+-        android:orientation="vertical">
++    <!-- AQUI UMA PAGINA TESTE PARA SEMPRE CRIAR O CONTEUDO DAS PAGINAS,
++    COPIAR E COLAR DENTRO DO LINEAR LAAYOUT DEPOIS DE INCLUDE DE CADA CODIGO XML DE PADA PAGINA, POIS
++    DENTRO DO DRAWER LAAYOUT NÃO É POSSIVEL COLOCAR CONTEUDO COM FACILIDADE -->
+ 
+-        <include
++    <include
+             layout="@layout/home_toolbar"/>
+ 
+-        <TextView
+-            android:layout_width="match_parent"
+-            android:layout_height="match_parent"
+-            android:text="Contato"
+-            android:textSize="50sp"
+-            android:textStyle="bold"
+-            android:gravity="center"/>
++    <EditText
++        android:id="@+id/editTextPhone"
++        android:layout_width="158dp"
++        android:layout_height="27dp"
++        android:layout_marginStart="16dp"
++        android:layout_marginBottom="24dp"
++        android:background="@drawable/bg_edittext_normal"
++        android:ems="10"
++        android:hint="@string/telefone"
++        android:inputType="phone"
++        app:layout_constraintBottom_toTopOf="@+id/editTextTextEmailAddress2"
++        app:layout_constraintEnd_toEndOf="parent"
++        app:layout_constraintHorizontal_bias="0.063"
++        app:layout_constraintStart_toEndOf="@+id/editTextTextPersonName2"
++        tools:ignore="MissingConstraints"
++        android:autofillHints="" />
++
++    <TextView
++        android:id="@+id/textView15"
++        android:layout_width="wrap_content"
++        android:layout_height="wrap_content"
++        android:layout_marginTop="64dp"
++        android:text="@string/endere_o"
++        android:textColor="#ffffff"
++        android:textStyle="bold"
++        app:layout_constraintEnd_toEndOf="parent"
++        app:layout_constraintHorizontal_bias="0.458"
++        app:layout_constraintStart_toStartOf="parent"
++        app:layout_constraintTop_toBottomOf="@+id/bt_Enviar_Mensage" />
++
++    <TextView
++        android:id="@+id/textView12"
++        android:layout_width="wrap_content"
++        android:layout_height="wrap_content"
++        android:layout_marginStart="28dp"
++        android:layout_marginTop="4dp"
++        android:text="@string/_11_2345_7894"
++        android:textColor="#ffffff"
++        android:textSize="12sp"
++        android:textStyle="bold"
++        app:layout_constraintStart_toStartOf="parent"
++        app:layout_constraintTop_toBottomOf="@+id/textView11" />
++
++    <TextView
++        android:id="@+id/textView11"
++        android:layout_width="wrap_content"
++        android:layout_height="wrap_content"
++        android:layout_marginStart="40dp"
++        android:layout_marginTop="16dp"
++        android:text="@string/telefone"
++        android:textColor="#ffffff"
++        android:textSize="14sp"
++        android:textStyle="bold"
++        app:layout_constraintStart_toStartOf="parent"
++        app:layout_constraintTop_toBottomOf="@+id/bt_Enviar_Mensage" />
++
++    <TextView
++        android:id="@+id/textView3"
++        android:layout_width="wrap_content"
++        android:layout_height="wrap_content"
++        android:layout_marginTop="4dp"
++        android:text="@string/contato"
++        android:textColor="#FF5722"
++        android:textSize="24sp"
++        android:textStyle="bold"
++        app:layout_constraintBottom_toTopOf="@+id/editTextPhone"
++        app:layout_constraintEnd_toEndOf="parent"
++        app:layout_constraintStart_toStartOf="parent"
++        app:layout_constraintTop_toBottomOf="@+id/textView2"
++        app:layout_constraintVertical_bias="0.333"
++        tools:ignore="MissingConstraints" />
++
++    <Button
++        android:id="@+id/bt_Enviar_Mensage"
++        android:layout_width="124dp"
++        android:layout_height="38dp"
++        android:layout_marginTop="8dp"
++        android:onClick="abrirDialog"
++        android:text="@string/enviar"
++        app:layout_constraintEnd_toEndOf="parent"
++        app:layout_constraintHorizontal_bias="0.498"
++        app:layout_constraintStart_toStartOf="parent"
++        app:layout_constraintTop_toBottomOf="@+id/editTextTextPersonName"
++        tools:ignore="MissingConstraints" />
++
++    <EditText
++        android:id="@+id/editTextTextPersonName"
++        android:layout_width="249dp"
++        android:layout_height="132dp"
++        android:layout_marginTop="12dp"
++        android:background="@drawable/bg_edit_text"
++        android:ems="10"
++        android:hint="@string/digite_sua_mensagem"
++        android:inputType="textPersonName"
++        app:layout_constraintEnd_toEndOf="parent"
++        app:layout_constraintStart_toStartOf="parent"
++        app:layout_constraintTop_toBottomOf="@+id/editTextTextEmailAddress2"
++        android:autofillHints="" />
++
++    <TextView
++        android:id="@+id/textView17"
++        android:layout_width="wrap_content"
++        android:layout_height="wrap_content"
++        android:layout_marginTop="12dp"
++        android:text="@string/s_o_paulo_sp_cep_04752_900"
++        android:textColor="#FFFFFF"
++        android:textStyle="bold"
++        app:layout_constraintEnd_toEndOf="parent"
++        app:layout_constraintHorizontal_bias="0.525"
++        app:layout_constraintStart_toStartOf="parent"
++        app:layout_constraintTop_toBottomOf="@+id/textView16" />
+ 
++    <TextView
++        android:id="@+id/textView16"
++        android:layout_width="268dp"
++        android:layout_height="24dp"
++        android:layout_marginTop="4dp"
++        android:text="@string/r_amador_bueno_389_491_santo_amaro"
++        android:textColor="#ffffff"
++        android:textStyle="bold"
++        app:layout_constraintEnd_toEndOf="parent"
++        app:layout_constraintHorizontal_bias="0.503"
++        app:layout_constraintStart_toStartOf="parent"
++        app:layout_constraintTop_toBottomOf="@+id/textView15" />
+ 
+-    </LinearLayout>
++    <TextView
++        android:id="@+id/textView14"
++        android:layout_width="wrap_content"
++        android:layout_height="wrap_content"
++        android:layout_marginStart="116dp"
++        android:layout_marginTop="4dp"
++        android:text="@string/sac_rapidex_com_br"
++        android:textColor="#ffffff"
++        android:textStyle="bold"
++        app:layout_constraintStart_toEndOf="@+id/textView12"
++        app:layout_constraintTop_toBottomOf="@+id/textView13" />
+ 
+-    <RelativeLayout
+-        android:layout_width="300dp"
+-        android:layout_height="match_parent"
+-        android:layout_gravity="start"
+-        android:background="@android:color/white">
++    <TextView
++        android:id="@+id/textView13"
++        android:layout_width="wrap_content"
++        android:layout_height="wrap_content"
++        android:layout_marginStart="92dp"
++        android:layout_marginTop="16dp"
++        android:text="@string/e_mail"
++        android:textColor="#ffffff"
++        android:textStyle="bold"
++        app:layout_constraintEnd_toEndOf="parent"
++        app:layout_constraintHorizontal_bias="0.351"
++        app:layout_constraintStart_toEndOf="@+id/textView11"
++        app:layout_constraintTop_toBottomOf="@+id/bt_Enviar_Mensage" />
+ 
+-        <include
+-            layout="@layout/main_nav_drawer"/>
++    <EditText
++        android:id="@+id/editTextTextPersonName2"
++        android:layout_width="158dp"
++        android:layout_height="27dp"
++        android:layout_marginStart="16dp"
++        android:layout_marginTop="164dp"
++        android:background="@drawable/bg_edittext_normal"
++        android:ems="10"
++        android:hint="@string/nome"
++        android:inputType="textPersonName"
++        android:textColor="#040303"
++        app:layout_constraintStart_toStartOf="parent"
++        app:layout_constraintTop_toTopOf="parent"
++        android:autofillHints="" />
+ 
+-    </RelativeLayout>
++    <EditText
++        android:id="@+id/editTextTextEmailAddress2"
++        android:layout_width="337dp"
++        android:layout_height="31dp"
++        android:layout_marginTop="24dp"
++        android:background="@drawable/bg_edittext_normal"
++        android:ems="10"
++        android:hint="@string/e_mail"
++        android:inputType="textEmailAddress"
++        app:layout_constraintEnd_toEndOf="parent"
++        app:layout_constraintStart_toStartOf="parent"
++        app:layout_constraintTop_toBottomOf="@+id/editTextTextPersonName2"
++        android:autofillHints="" />
++
++    <TextView
++        android:id="@+id/textView2"
++        android:layout_width="wrap_content"
++        android:layout_height="wrap_content"
++        android:layout_marginTop="72dp"
++        android:text="@string/entrar_em_contato"
++        android:textColor="#ffffff"
++        android:textSize="18sp"
++        android:textStyle="bold"
++        app:layout_constraintEnd_toEndOf="parent"
++        app:layout_constraintHorizontal_bias="0.498"
++        app:layout_constraintStart_toStartOf="parent"
++        app:layout_constraintTop_toTopOf="parent" />
++
+ 
+-</androidx.drawerlayout.widget.DrawerLayout>
+\ No newline at end of file
++</androidx.constraintlayout.widget.ConstraintLayout >
+\ No newline at end of file
+Index: .idea/misc.xml
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.BaseRevisionTextPatchEP
+<+><?xml version=\"1.0\" encoding=\"UTF-8\"?>\r\n<project version=\"4\">\r\n  <component name=\"ProjectRootManager\" version=\"2\" languageLevel=\"JDK_1_7\" project-jdk-name=\"1.8\" project-jdk-type=\"JavaSDK\">\r\n    <output url=\"file://$PROJECT_DIR$/build/classes\" />\r\n  </component>\r\n  <component name=\"ProjectType\">\r\n    <option name=\"id\" value=\"Android\" />\r\n  </component>\r\n</project>
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+--- .idea/misc.xml	(revision 0aab59911d9a36fc0f81d3683340effc247e5528)
++++ .idea/misc.xml	(date 1604706246366)
+@@ -1,6 +1,6 @@
+ <?xml version="1.0" encoding="UTF-8"?>
+ <project version="4">
+-  <component name="ProjectRootManager" version="2" languageLevel="JDK_1_7" project-jdk-name="1.8" project-jdk-type="JavaSDK">
++  <component name="ProjectRootManager" version="2" languageLevel="JDK_1_8" default="true" project-jdk-name="1.8" project-jdk-type="JavaSDK">
+     <output url="file://$PROJECT_DIR$/build/classes" />
+   </component>
+   <component name="ProjectType">
+Index: build.gradle
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.BaseRevisionTextPatchEP
+<+>// Top-level build file where you can add configuration options common to all sub-projects/modules.\r\nbuildscript {\r\n    repositories {\r\n        google()\r\n        jcenter()\r\n    }\r\n    dependencies {\r\n        classpath \"com.android.tools.build:gradle:4.0.1\"\r\n\r\n        // NOTE: Do not place your application dependencies here; they belong\r\n        // in the individual module build.gradle files\r\n    }\r\n}\r\n\r\nallprojects {\r\n    repositories {\r\n        google()\r\n        jcenter()\r\n    }\r\n}\r\n\r\ntask clean(type: Delete) {\r\n    delete rootProject.buildDir\r\n}
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+--- build.gradle	(revision 0aab59911d9a36fc0f81d3683340effc247e5528)
++++ build.gradle	(date 1604706256904)
+@@ -5,7 +5,7 @@
+         jcenter()
+     }
+     dependencies {
+-        classpath "com.android.tools.build:gradle:4.0.1"
++        classpath 'com.android.tools.build:gradle:4.1.0'
+ 
+         // NOTE: Do not place your application dependencies here; they belong
+         // in the individual module build.gradle files
+Index: .idea/gradle.xml
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.BaseRevisionTextPatchEP
+<+><?xml version=\"1.0\" encoding=\"UTF-8\"?>\r\n<project version=\"4\">\r\n  <component name=\"GradleMigrationSettings\" migrationVersion=\"1\" />\r\n  <component name=\"GradleSettings\">\r\n    <option name=\"linkedExternalProjectsSettings\">\r\n      <GradleProjectSettings>\r\n        <option name=\"testRunner\" value=\"PLATFORM\" />\r\n        <option name=\"distributionType\" value=\"DEFAULT_WRAPPED\" />\r\n        <option name=\"externalProjectPath\" value=\"$PROJECT_DIR$\" />\r\n        <option name=\"gradleHome\" value=\"C:/gradle-6.6.1\" />\r\n        <option name=\"gradleJvm\" value=\"1.8\" />\r\n        <option name=\"modules\">\r\n          <set>\r\n            <option value=\"$PROJECT_DIR$\" />\r\n            <option value=\"$PROJECT_DIR$/app\" />\r\n          </set>\r\n        </option>\r\n        <option name=\"resolveModulePerSourceSet\" value=\"false\" />\r\n      </GradleProjectSettings>\r\n    </option>\r\n  </component>\r\n</project>
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+--- .idea/gradle.xml	(revision 0aab59911d9a36fc0f81d3683340effc247e5528)
++++ .idea/gradle.xml	(date 1604706246423)
+@@ -7,7 +7,7 @@
+         <option name="testRunner" value="PLATFORM" />
+         <option name="distributionType" value="DEFAULT_WRAPPED" />
+         <option name="externalProjectPath" value="$PROJECT_DIR$" />
+-        <option name="gradleHome" value="C:/gradle-6.6.1" />
++        <option name="gradleHome" value="$PROJECT_DIR$/../../../../gradle-6.6.1" />
+         <option name="gradleJvm" value="1.8" />
+         <option name="modules">
+           <set>
+@@ -16,6 +16,7 @@
+           </set>
+         </option>
+         <option name="resolveModulePerSourceSet" value="false" />
++        <option name="useQualifiedModuleNames" value="true" />
+       </GradleProjectSettings>
+     </option>
+   </component>
+Index: app/src/main/res/drawable/bg_edit_text.xml
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+--- app/src/main/res/drawable/bg_edit_text.xml	(date 1605055330779)
++++ app/src/main/res/drawable/bg_edit_text.xml	(date 1605055330779)
+@@ -0,0 +1,8 @@
++<?xml version="1.0" encoding="utf-8"?>
++<shape xmlns:android="http://schemas.android.com/apk/res/android"
++    android:shape="rectangle">
++
++    <solid android:color="#ffffff" />
++
++
++</shape>
+\ No newline at end of file
+Index: app/src/main/java/com/entregasapp/rapidex/ContatoActivity.java
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.BaseRevisionTextPatchEP
+<+>package com.entregasapp.rapidex;\r\n\r\n\r\nimport androidx.appcompat.app.AppCompatActivity;\r\nimport androidx.core.view.GravityCompat;\r\nimport androidx.drawerlayout.widget.DrawerLayout;\r\n\r\nimport android.app.Activity;\r\nimport android.app.AlertDialog;\r\nimport android.content.DialogInterface;\r\nimport android.content.Intent;\r\nimport android.os.Bundle;\r\nimport android.view.View;\r\n\r\n\r\npublic class ContatoActivity extends AppCompatActivity {\r\n\r\n    DrawerLayout drawerLayout;\r\n\r\n    @Override\r\n    protected void onCreate(Bundle savedInstanceState) {\r\n        super.onCreate(savedInstanceState);\r\n        setContentView(R.layout.activity_contato);\r\n\r\n        drawerLayout = findViewById(R.id.drawer_layout);\r\n\r\n    }\r\n\r\n    public void ClickMenu (View view){\r\n        openDrawer(drawerLayout);\r\n\r\n    }\r\n\r\n    private static void openDrawer(DrawerLayout drawerLayout) {\r\n        drawerLayout.openDrawer(GravityCompat.START);\r\n\r\n    }\r\n    public void ClickLogo (View view){\r\n        closeDrawer(drawerLayout);\r\n    }\r\n\r\n    private static void closeDrawer(DrawerLayout drawerLayout) {\r\n        if (drawerLayout.isDrawerOpen(GravityCompat.START)){\r\n\r\n            drawerLayout.closeDrawer(GravityCompat.START);\r\n        }\r\n    }\r\n    public void ClickContato(View view){\r\n        recreate();\r\n    }\r\n    public void ClickHome(View view){ redirectActivity(this,HomeActivity.class); }\r\n    public void ClickServicos(View view){ redirectActivity(this,ServicosActivity.class); }\r\n    public void ClickFazerPedido(View view){ redirectActivity(this,FazerPedidoActivity.class); }\r\n    public void ClickMeusPedidos(View view){ redirectActivity(this,MeusPedidosActivity.class); }\r\n    public void ClickRastreamento(View view){\r\n        redirectActivity(this,RastreioActivity.class);\r\n    }\r\n    public void ClickSobrenos(View view){\r\n        redirectActivity(this,SobreActivity.class);\r\n    }\r\n\r\n    public void ClickLogout(View view){\r\n        logout(this);\r\n    }\r\n\r\n    private static void logout(final Activity activity) {\r\n        AlertDialog.Builder builder = new AlertDialog.Builder(activity);\r\n        builder.setTitle(\"Sair\");\r\n        builder.setMessage(\"Você tem certeza que quer sair ?\");\r\n        builder.setPositiveButton(\"Sim\", new DialogInterface.OnClickListener() {\r\n            @Override\r\n            public void onClick(DialogInterface dialog, int which) {\r\n                activity.finishAffinity();\r\n                System.exit(0);\r\n\r\n            }\r\n        });\r\n        builder.setNegativeButton(\"Não\", new DialogInterface.OnClickListener() {\r\n            @Override\r\n            public void onClick(DialogInterface dialog, int which) {\r\n                dialog.dismiss();\r\n            }\r\n        });\r\n        builder.show();\r\n    }\r\n\r\n    private static void redirectActivity(Activity activity,Class aClass){\r\n        Intent intent = new Intent(activity,aClass);\r\n\r\n        intent.setFlags(Intent.FLAG_ACTIVITY_NEW_TASK);\r\n\r\n        activity.startActivity(intent);\r\n    }\r\n\r\n    @Override\r\n    protected void onPause() {\r\n        super.onPause();\r\n        closeDrawer(drawerLayout);\r\n    }\r\n}\r\n
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+--- app/src/main/java/com/entregasapp/rapidex/ContatoActivity.java	(revision 0aab59911d9a36fc0f81d3683340effc247e5528)
++++ app/src/main/java/com/entregasapp/rapidex/ContatoActivity.java	(date 1605059055717)
+@@ -25,9 +25,19 @@
+         drawerLayout = findViewById(R.id.drawer_layout);
+ 
+     }
++    //mensagem do botão
++    public void abrirDialog(View view){
++        androidx.appcompat.app.AlertDialog.Builder dialog = new androidx.appcompat.app.AlertDialog.Builder
++                (this);
++        dialog.setTitle("Mensagem");
++        dialog.setMessage("Sua Mensagem Foi Enviada com Sucesso!");
+ 
++        dialog.create();
++        dialog.show();
++    }
++    //Fim do codigo da mesagem do botão
+     public void ClickMenu (View view){
+-        openDrawer(drawerLayout);
++       openDrawer(drawerLayout);
+ 
+     }
+ 
+Index: .idea/compiler.xml
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+--- .idea/compiler.xml	(date 1604706246389)
++++ .idea/compiler.xml	(date 1604706246389)
+@@ -0,0 +1,6 @@
++<?xml version="1.0" encoding="UTF-8"?>
++<project version="4">
++  <component name="CompilerConfiguration">
++    <bytecodeTargetLevel target="1.8" />
++  </component>
++</project>
+\ No newline at end of file
+Index: app/src/main/res/values/strings.xml
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.BaseRevisionTextPatchEP
+<+><resources>\r\n    <string name=\"app_name\">Rapidex</string>\r\n    <string name=\"usuario\">Usuário</string>\r\n    <string name=\"senha\">Senha</string>\r\n    <string name=\"login\">Login</string>\r\n    <string name=\"nao_tem_cadastro\">Não tem cadastro ?</string>\r\n    <string name=\"cadastrase\">Cadastrar-se</string>\r\n    <string name=\"confirmar_senha\">Confirmar Senha</string>\r\n    <string name=\"ja_cadastrado\">Já Cadastrado?</string>\r\n    <string name=\"bem_vindo_rapidex\">Bem Vindo á Rapidex</string>\r\n\r\n    <string name=\"openNavDrawer\" />\r\n    <string name=\"closeNavDrawer\" />\r\n\r\n\r\n    <string name=\"log_out\">Log Out</string>\r\n    <string name=\"username\">Usuário</string>\r\n    <string name=\"todo\">TODO</string>\r\n    <string name=\"sair\">Sair</string>\r\n\r\n    <string name=\"meus_pedidos\">Meus Pedidos</string>\r\n    <string name=\"rastreamento\">Rastreamento</string>\r\n\r\n    <string name=\"contato_rapidex\">Contato Rapidex</string>\r\n\r\n    <string name=\"sobre\">Sobre</string>\r\n    <string name=\"fazer_pedido\">Fazer Pedido</string>\r\n\r\n\r\n</resources>
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+--- app/src/main/res/values/strings.xml	(revision 0aab59911d9a36fc0f81d3683340effc247e5528)
++++ app/src/main/res/values/strings.xml	(date 1605060124958)
+@@ -15,7 +15,7 @@
+ 
+     <string name="log_out">Log Out</string>
+     <string name="username">Usuário</string>
+-    <string name="todo">TODO</string>
++    <string name="tudo">TODO</string>
+     <string name="sair">Sair</string>
+ 
+     <string name="meus_pedidos">Meus Pedidos</string>
+@@ -25,6 +25,35 @@
+ 
+     <string name="sobre">Sobre</string>
+     <string name="fazer_pedido">Fazer Pedido</string>
++    <string name="sac_rapidex_com_br">sac@rapidex.com.br</string>
++    <string name="r_amador_bueno_389_491_santo_amaro">R. Amador Bueno, 389/491 - Santo Amaro</string>
++    <string name="s_o_paulo_sp_cep_04752_900">São Paulo - SP, CEP:04752-900</string>
++    <string name="digite_sua_mensagem">Digite Sua Mensagem</string>
++    <string name="contato">Contato</string>
++    <string name="fone">Telefone</string>
++    <string name="_11_2345_7894">11 2345-7894</string>
++    <string name="endere_o">Endereço</string>
++    <string name="mail">E-mail</string>
++    <string name="nome">Nome</string>
++    <string name="e_mail">E-mail</string>
++    <string name="entrar_em_contato">Entrar em Contato</string>
++    <string name="telefone">Telefone</string>
++    <string name="enviar">Enviar</string>
++    <string name="nossos_servi_os">NOSSOS SERVIÇOS</string>
++    <string name="entrega_expressa_com_moto_de_cargas_de">Entrega expressa com moto de cargas de</string>
++    <string name="cargas_de_pequeno_e_grande_porte_para">Cargas de pequeno e grande porte, para</string>
++    <string name="frete_estadual">FRETE ESTADUAL</string>
++    <string name="todo_o_estado_de_s_o_paulo">todo o Estado de São Paulo.</string>
++    <string name="frete_nacional">FRETE NACIONAL</string>
++    <string name="cargas_de_pequenos_e_medios_porte_para">Cargas de pequenos e medios porte, para</string>
++    <string name="pequeno_porte_na_grande_s_o_paulo">pequeno porte, na Grande São Paulo.</string>
++    <string name="todo_o_brasil">todo o Brasil.</string>
++    <string name="frete_r_pido">FRETE RÁPIDO</string>
++    <string name="outro">TODO</string>
++    <string name="cargas_expressas_com_agilidade_na_entrega_em_todo_o_estado_de_s_o_paulo_para_todo">Cargas Expressas com agilidade na entrega, em todo o estado de São Paulo para todo</string>
++    <string name="o_brasil">o Brasil.</string>
++    <string name="todos">TODO</string>
++    <string name="todo" translatable="false">TODO</string>
+ 
+ 
+ </resources>
+\ No newline at end of file
+Index: app/src/main/res/values/colors.xml
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.BaseRevisionTextPatchEP
+<+><?xml version=\"1.0\" encoding=\"utf-8\"?>\r\n<resources>\r\n    <color name=\"colorPrimary\">#ff6a00</color>\r\n    <color name=\"colorPrimaryDark\">#3700B3</color>\r\n    <color name=\"colorAccent\">#ff6a00</color>\r\n</resources>
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+--- app/src/main/res/values/colors.xml	(revision 0aab59911d9a36fc0f81d3683340effc247e5528)
++++ app/src/main/res/values/colors.xml	(date 1605060367204)
+@@ -1,6 +1,6 @@
+ <?xml version="1.0" encoding="utf-8"?>
+ <resources>
+     <color name="colorPrimary">#ff6a00</color>
+-    <color name="colorPrimaryDark">#3700B3</color>
++    <color name="colorPrimaryDark">#FF5722</color>
+     <color name="colorAccent">#ff6a00</color>
+ </resources>
+\ No newline at end of file
+Index: gradle/wrapper/gradle-wrapper.properties
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.BaseRevisionTextPatchEP
+<+>#Tue Sep 15 11:48:38 BRT 2020\r\ndistributionBase=GRADLE_USER_HOME\r\ndistributionPath=wrapper/dists\r\nzipStoreBase=GRADLE_USER_HOME\r\nzipStorePath=wrapper/dists\r\ndistributionUrl=https\\://services.gradle.org/distributions/gradle-6.1.1-all.zip\r\n
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>windows-1252
+===================================================================
+--- gradle/wrapper/gradle-wrapper.properties	(revision 0aab59911d9a36fc0f81d3683340effc247e5528)
++++ gradle/wrapper/gradle-wrapper.properties	(date 1604706256913)
+@@ -1,6 +1,6 @@
+-#Tue Sep 15 11:48:38 BRT 2020
++#Fri Nov 06 20:44:16 BRT 2020
+ distributionBase=GRADLE_USER_HOME
+ distributionPath=wrapper/dists
+ zipStoreBase=GRADLE_USER_HOME
+ zipStorePath=wrapper/dists
+-distributionUrl=https\://services.gradle.org/distributions/gradle-6.1.1-all.zip
++distributionUrl=https\://services.gradle.org/distributions/gradle-6.5-bin.zip
